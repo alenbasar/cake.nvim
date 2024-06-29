@@ -254,7 +254,6 @@ local function get_groups()
       colors.neutral_blue,
       colors.neutral_purple,
       colors.neutral_aqua,
-      colors.fg4,
       colors.gray,
       colors.red,
       colors.green,
@@ -262,7 +261,7 @@ local function get_groups()
       colors.blue,
       colors.purple,
       colors.aqua,
-      colors.fg1,
+      colors.fg0,
     }
     for index, value in ipairs(term_colors) do
       vim.g["terminal_color_" .. index - 1] = value
@@ -271,16 +270,8 @@ local function get_groups()
 
   local groups = {
     CakeFg0 = { fg = colors.fg0 },
-    CakeFg1 = { fg = colors.fg1 },
-    CakeFg2 = { fg = colors.fg2 },
-    CakeFg3 = { fg = colors.fg3 },
-    CakeFg4 = { fg = colors.fg4 },
     CakeGray = { fg = colors.gray },
     CakeBg0 = { fg = colors.bg0 },
-    CakeBg1 = { fg = colors.bg1 },
-    CakeBg2 = { fg = colors.bg2 },
-    CakeBg3 = { fg = colors.bg3 },
-    CakeBg4 = { fg = colors.bg4 },
     CakeRed = { fg = colors.red },
     CakeRedBold = { fg = colors.red, bold = config.bold },
     CakeGreen = { fg = colors.green },
