@@ -143,7 +143,15 @@ local dark = sortedColors.dark
 ---@class CakePalette
 Cake.palette = {
   dark0 = baseColors.bg,
+  dark1 = baseColors.bg,
+  dark2 = baseColors.bg,
+  dark3 = baseColors.bg,
+  dark4 = baseColors.bg,
   light0 = baseColors.bg,
+  light1 = baseColors.bg,
+  light2 = baseColors.bg,
+  light3 = baseColors.bg,
+  light4 = baseColors.bg,
   bright_red = bright.red,
   bright_green = bright.green,
   bright_yellow = bright.yellow,
@@ -189,7 +197,15 @@ local function get_colors()
   local color_groups = {
     dark = {
       bg0 = p.dark0,
+      bg1 = p.dark1,
+      bg2 = p.dark2,
+      bg3 = p.dark3,
+      bg4 = p.dark4,
       fg0 = p.light0,
+      fg1 = p.light1,
+      fg2 = p.light2,
+      fg3 = p.light3,
+      fg4 = p.light4,
       red = p.bright_red,
       green = p.bright_green,
       yellow = p.bright_yellow,
@@ -210,7 +226,15 @@ local function get_colors()
     },
     light = {
       bg0 = p.light0,
+      bg1 = p.light1,
+      bg2 = p.light2,
+      bg3 = p.light3,
+      bg4 = p.light4,
       fg0 = p.dark0,
+      fg1 = p.dark1,
+      fg2 = p.dark2,
+      fg3 = p.dark3,
+      fg4 = p.dark4,
       red = p.faded_red,
       green = p.faded_green,
       yellow = p.faded_yellow,
@@ -254,6 +278,7 @@ local function get_groups()
       colors.neutral_blue,
       colors.neutral_purple,
       colors.neutral_aqua,
+      colors.fg4,
       colors.gray,
       colors.red,
       colors.green,
@@ -262,6 +287,7 @@ local function get_groups()
       colors.purple,
       colors.aqua,
       colors.fg0,
+      colors.fg1,
     }
     for index, value in ipairs(term_colors) do
       vim.g["terminal_color_" .. index - 1] = value
@@ -270,8 +296,16 @@ local function get_groups()
 
   local groups = {
     CakeFg0 = { fg = colors.fg0 },
+    CakeFg1 = { fg = colors.fg1 },
+    CakeFg2 = { fg = colors.fg2 },
+    CakeFg3 = { fg = colors.fg3 },
+    CakeFg4 = { fg = colors.fg4 },
     CakeGray = { fg = colors.gray },
     CakeBg0 = { fg = colors.bg0 },
+    CakeBg1 = { fg = colors.bg1 },
+    CakeBg2 = { fg = colors.bg2 },
+    CakeBg3 = { fg = colors.bg3 },
+    CakeBg4 = { fg = colors.bg4 },
     CakeRed = { fg = colors.red },
     CakeRedBold = { fg = colors.red, bold = config.bold },
     CakeGreen = { fg = colors.green },
@@ -428,6 +462,7 @@ local function get_groups()
     NvimTreeRootFolder = { fg = colors.neutral_purple, bold = true },
     NvimTreeFolderIcon = { fg = colors.neutral_blue, bold = true },
     NvimTreeFileIcon = { fg = colors.light0 },
+    NvimTreeFileIcon = { fg = colors.light2 },
     NvimTreeExecFile = { fg = colors.neutral_green, bold = true },
     NvimTreeOpenedFile = { fg = colors.bright_red, bold = true },
     NvimTreeSpecialFile = { fg = colors.neutral_yellow, bold = true, underline = true },
