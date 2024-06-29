@@ -108,7 +108,7 @@ local sortedColors = {
     bg = "#fffbcc",
   },
   faded = {
-    red = "#e76495 ",
+    red = "#e76495",
     yellow = "#ffde49",
     blue = "#8f49ff",
     purple = "#d049ff",
