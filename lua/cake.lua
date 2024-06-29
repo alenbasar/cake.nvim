@@ -211,7 +211,7 @@ local function get_colors()
   local contrast = config.contrast
 
   local color_groups = {
-    dark = {
+    light = {
       bg0 = p.dark0,
       bg1 = p.dark1,
       bg2 = p.dark2,
@@ -240,7 +240,7 @@ local function get_colors()
       dark_aqua = p.dark_aqua,
       gray = p.gray,
     },
-    light = {
+    dark = {
       bg0 = p.light0,
       bg1 = p.light1,
       bg2 = p.light2,
