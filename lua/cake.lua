@@ -142,13 +142,13 @@ local dark = sortedColors.dark
 -- main cake color palette
 ---@class CakePalette
 Cake.palette = {
-  dark0_hard = dark.bg,
-  dark0 = neutral.bg,
-  dark0_soft = light.bg,
-  dark1 = light.bg,
-  dark2 = light.bg,
-  dark3 = light.bg,
-  dark4 = light.bg,
+  dark0_hard = dark.white,
+  dark0 = neutral.white,
+  dark0_soft = light.white,
+  dark1 = light.white,
+  dark2 = light.white,
+  dark3 = light.white,
+  dark4 = light.white,
   light0_hard = neutral.bg,
   light0 = neutral.bg,
   light0_soft = light.bg,
